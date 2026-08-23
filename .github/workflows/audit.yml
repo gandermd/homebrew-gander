@@ -1,0 +1,19 @@
+name: audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  audit:
+    name: brew audit --strict
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        run: brew update
+
+      - name: Audit gander
+        run: brew audit --strict --new --tap=gandermd/gander Formula/gander.rb
