@@ -5,32 +5,32 @@ class Gander < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-darwin-arm64"
-      sha256 "21312c853c1ed520a2990001228d53f8aaef64d57ee67b2340be0016a4526f53"
+      url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-darwin-arm64"
+      sha256 "22f6a423609c18dd92408719649559154aa0d85e957307d4c9bfc5cea987802a"
     else
-      url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-darwin-amd64"
-      sha256 "378fdcc6492c75fb4616d3af549e87f111cbb0f53afa513138742e2f0e234221"
+      url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-darwin-amd64"
+      sha256 "ed64f01075ec93b2889040e9b4766a9bc832abdf22ca357577f0802a9f42c857"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-linux-arm64"
-      sha256 "e548f5aaf195e58d0211c161d33901f84a5ed3ad31175a5208728dc616dfc05b"
+      url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-linux-arm64"
+      sha256 "2790ea73c545d335f93687631fcca439d8a50f98dc68a5447ee19e9d7ed3ebea"
     else
-      url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-linux-amd64"
-      sha256 "1a2daebec367aae675c0004b8ce7ff082cc1871ec9937a33b2ba36efd5f60611"
+      url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-linux-amd64"
+      sha256 "430523bea22fc21be9982e9bbb1e916dc1d65f19b7812852f5bfead301cc73c4"
     end
   end
 
   resource "man" do
-    url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-man.tar.gz"
-    sha256 "ae29e2953fade2b4e0e2ee7448dd53e4321e48dcbc6c135a46b6dd713a8fdb3f"
+    url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-man.tar.gz"
+    sha256 "f2364272672233ebdfa49150b7e1c28ee5abfcbb54d409f97931945ae5d42a5e"
   end
 
   resource "completions" do
-    url "https://github.com/gandermd/gander-cli/releases/download/v0.23.0/gander-completions.tar.gz"
-    sha256 "f5eeae755f214a6c6dbc1a7b8ac961b1d4013f87f5abac226c77af7e5111720e"
+    url "https://github.com/gandermd/gander-cli/releases/download/v0.24.0/gander-completions.tar.gz"
+    sha256 "dac836c028a0909becdba1026de35c53d80ed3dbbaa5f85bb1ce7b08b0ce90bb"
   end
 
   def install
