@@ -1,6 +1,6 @@
 class Gander < Formula
-  desc "Render Markdown locally, optionally share it on gander.md"
-  homepage "https://github.com/gandermd/gander-cli"
+  desc "Live review loop for markdown an agent is still writing"
+  homepage "https://gander.md"
   license "MIT"
 
   on_macos do
