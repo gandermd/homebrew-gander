@@ -1,12 +1,14 @@
 # gandermd/gander
 
-Homebrew tap for [gander](https://github.com/gandermd/gander-cli) — a CLI
-that renders Markdown in your browser.
+Homebrew tap for [gander](https://github.com/gandermd/gander-cli), the
+live review loop for markdown an agent is still writing.
 
 ```bash
 brew tap gandermd/gander
 brew install gander
 ```
+
+Site: [gander.md](https://gander.md)
 
 ## Maintenance
 
